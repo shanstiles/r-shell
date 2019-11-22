@@ -8,7 +8,9 @@ if("-a" %in% args) {
   args <- Sys.glob(str_c(folder, "/*.csv"))
   
   if(length(args == 0)) {
-    print("no files found in the specified folder")
+    print("please provide a list of .csv files 
+          
+          To specify all .csv files, use -a and a data directory as input.")
   }
   
 } else {

@@ -49,7 +49,7 @@ render_docs <- function(files){
   #output: calls the render_doc function for each file
   
   for(file in files) {
-    render_doc()
+    render_doc(file)
   }
 
 }

@@ -1,5 +1,7 @@
 library("rmarkdown")
 
+args <- commandArgs(trailingOnly = TRUE)
+
 render("surveys-report.Rmd", 
        output_dir = "reports",
-       params = list(file = "data/plot1.csv"))
+       params = list(file = args))
